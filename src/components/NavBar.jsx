@@ -7,8 +7,8 @@ export const NavBar = () => {
 
   return (
     <nav className={[!isMenuopen
-      ? " h-20 md:hidden w-full p-2 bg-[--color5-l]"
-      : " items-start p-2 flex flex-col z-[300]  w-screen h-screen bg-[--color5-l]",
+      ? " h-20 md:hidden w-full p-2 bg-[--color5-l] duration-1000"
+      : " items-start p-2 flex flex-col z-[300]  w-screen h-screen bg-[--color5-l] duration-1000",
     ]}
     >
       <ButtonBurguer
