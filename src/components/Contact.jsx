@@ -6,45 +6,59 @@ import { Alerta } from "../utils";
 
 export const Contact = () => {
 
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+
   const [alerta, setAlerta] = useState({});
 
-
+  const handleInputChange = (e) => {
+    const { id, value } = e.target;
+    setFormData({
+      ...formData,
+      [id]: value,
+    });
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    console.log("first")
-    if (name.trim() !== "" || email.trim() !== "" || message.trim() !== "") {
-      console.log("first")
-      setAlerta({
-        msg: "No puede haber campos vacios",
-        error: true
-      })
-      return
+    if ([formData.name, formData.email, formData.message].includes("")) {
+      setAlerta({ msg: 'No puede haber campos vacios', error: true });
+      setTimeout(() => {
+        setAlerta({})
+      }, 3000);
+      return;
     }
-
+    try {
+      setAlerta({ msg: 'Mensaje enviado correctamente', error: false });
+      setTimeout(() => {
+        setAlerta({})
+      }, 3000);
+    } catch (error) {
+      console.log(error)
+    }
   }
 
 
-  const { error } = alerta;
+  const { msg } = alerta;
 
   return (
 
     <div className="text-center items-center flex flex-col justify-center my-8">
-      <div id="form-container" className="bg-[--color1-l] p-16 rounded-lg shadow-2xl w-80 relative z-10 transform transition duration-500 ease-in-out">
-        <h2 id="form-title" className="text-center text-3xl font-bold mb-10 text-[--color5-l]">Contact</h2>
+      <div id="form-container" className="bg-[--color1-l] p-10 rounded-lg shadow-2xl w-80 relative z-10 transform transition duration-500 ease-in-out">
+        <h2 id="form-title" className="text-center text-3xl font-bold mb-10 text-[--color5-l] shadow-2xl p-3">Contact</h2>
         <form className="space-y-5">
-          <input type="text" className="w-full h-12 border border-gray-800 px-3 rounded-lg" placeholder="name" value={name} onChange={e => setName(e.target.value)} />
-          <input className="w-full h-12 border border-gray-800 px-3 rounded-lg" placeholder="Email" id="email" name="" type="email" value={email} onChange={e => setEmail(e.target.value)} />
-          <textarea className="w-full h-32 border border-gray-800 px-3 rounded-lg" placeholder="Message" id="message" name="" value={message} onChange={e => setMessage(e.target.value)}></textarea>
-          <button className="w-full h-12 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline uppercase" onClick={handleSubmit}>send</button>
+          <input type="text" className="w-full h-12 border border-[--color5-l]  px-3 rounded-lg" placeholder="name" id="name" value={formData.name} onChange={handleInputChange} />
+          <input className="w-full h-12 border border-[--color5-l]  px-3 rounded-lg" placeholder="Email" id="email" name="" type="email" value={formData.email} onChange={handleInputChange} />
+          <textarea className="w-full h-32 border border-[--color5-l] px-3 rounded-lg" placeholder="Message" id="message" name="" value={formData.message} onChange={handleInputChange}></textarea>
+          <button className="w-full h-12 bg-[--color4-l] hover:bg-[--color5-l] text-[--color1-l] font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline uppercase" onClick={handleSubmit}>send message</button>
         </form>
-        <div>
+        <div className="pt-2 w-full">
           {
-            error && <Alerta/>
+            msg && <Alerta alerta={alerta} />
           }
         </div>
       </div>

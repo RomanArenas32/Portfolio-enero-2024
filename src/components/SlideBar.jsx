@@ -28,7 +28,7 @@ export const SlideBar = () => {
           Mail <BsFillPersonFill size={30} />
         </>
       ),
-      href: "roman.ea3232@gmail.com",
+      href: "mailto:roman.ea3232@gmail.com",
     },
     {
       id: 4,
