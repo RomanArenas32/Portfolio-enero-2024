@@ -37,7 +37,7 @@ export const SlideBar = () => {
           Resume <AiOutlineFilePdf size={30} />
         </>
       ),
-      href: "../assets/cv/ArenasRomanEmiliano-CV.pfdf",
+      href: "/ArenasRomanEmiliano-CV.pdf",
       style: "rounded-br-md",
       download: true,
     },
