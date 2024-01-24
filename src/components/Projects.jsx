@@ -14,10 +14,10 @@ export const Projects = () => {
   return (
     <div
       name="Projects"
-      className=" flex flex-col flex-wrap"
+      className=" flex flex-col flex-wrap mt-3"
     >
-      <h2 className="font-semibold text-3xl p-2 text-center">Projects</h2>
-      <div className="   gap-4 mt-10 flex flex-wrap justify-center">
+      <h2 className="text-center text-3xl font-bold mb-10 text-[--color5-l] shadow-2xl py-3">Projects</h2>
+      <div className="   gap-4  flex flex-wrap justify-center">
         <Proyect propiedades={{
           description:
             "In this project, published as a technology article on the 'redUsers' company website, I demonstrate various ways to consume a third-party API using the native JavaScript fetch API and other external packages such as Axios and Superagent. It consists of four applications.",

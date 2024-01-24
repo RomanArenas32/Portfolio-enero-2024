@@ -19,17 +19,17 @@ export const Home = () => {
         <img
           alt="developer"
           src={developer}
-          className=" md:static rounded-full object-contain w-60 shadow-2xl"
+          className=" md:static rounded-full object-contain w-60 shadow-2xl md:w-72"
         />
 
-        <div className=" w-auto flex flex-col gap-3 font-bold">
-          <div className="text-xl">
+        <div className=" w-auto flex flex-col gap-3 font-bold text-center justify-center items-center">
+          <div className="text-xl md:text-3xl">
             <p> Hi! Im Roman Arenas</p>
             <p>Full stack developer</p>
           </div>
 
           <Link
-            className="cursor-pointer text-xl  text-[--color1-l] bg-[--color4-l] mt-2 p-4 rounded-sm"
+            className="cursor-pointer text-xl  text-[--color1-l] bg-[--color4-l] mt-2 p-4 md:w-48 rounded-md"
             to="Projects"
             smooth="500"
           >

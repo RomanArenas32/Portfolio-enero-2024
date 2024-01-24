@@ -17,6 +17,7 @@ import atlas from '../assets/tecnologies/atlas.webp';
 import postgresql from '../assets/tecnologies/postgresql.png';
 import mysql from '../assets/tecnologies/mysql.jpg';
 import firebase from '../assets/tecnologies/firebase.png';
+import { Skill } from '../utils/Skill';
 
 
 export const Technologie = () => {
@@ -27,25 +28,25 @@ export const Technologie = () => {
       className=" w-full flex flex-col items-center justify-center"
     >
       <div className=' bg-[--color2-l] p-2 m-8'>
-        <h2 className="font-semibold text-3xl text-[--color5-l] text-center p-3  shadow-md">Technologies</h2>
+        <h2 className="text-center text-3xl font-bold mb-10 text-[--color5-l] shadow-2xl py-3">Technologies</h2>
         <div className="w-screen content-center justify-center  flex flex-wrap gap-3 p-10 tecnologies">
-          <img src={html5} alt="html5" />
-          <img src={css3} alt="css3" />
-          <img src={javascript} alt="js" />
-          <img src={react} alt="react" />
-          <img src={reactNative} alt="native" />
-          <img src={reactTestingLibrary} alt="reactTestingLibrary" />
-          <img src={jest} alt="jest" />
-          <img src={tailwind} alt="tailwind" />
-          <img src={bootstrap} alt="boostrap" />
-          <img src={sass} alt="sass" />
-          <img src={node} alt="node" />
-          <img src={express} alt="express" />
-          <img src={mongo} alt="mongo" />
-          <img src={atlas} alt="atlas" />
-          <img src={postgresql} alt="postgresql" />
-          <img src={mysql} alt="mysql" />
-          <img src={firebase} alt="firebase" />
+          <Skill img={{ src: html5, "alt": "html5" }} />
+          <Skill img={{ src: css3, "alt": "css3" }} />
+          <Skill img={{ src: javascript, "alt": "javascript" }} />
+          <Skill img={{ src: react, "alt": "react js" }} />
+          <Skill img={{ src: reactNative, "alt": "react Native" }} />
+          <Skill img={{ src: reactTestingLibrary, "alt": "reactTestingLibrary" }} />
+          <Skill img={{ src: jest, "alt": "jest" }} />
+          <Skill img={{ src: tailwind, "alt": "tailwind" }} />
+          <Skill img={{ src: bootstrap, "alt": "bootstrap" }} />
+          <Skill img={{ src: sass, "alt": "sass" }} />
+          <Skill img={{ src: node, "alt": "node" }} />
+          <Skill img={{ src: express, "alt": "express" }} />
+          <Skill img={{ src: mongo, "alt": "mongo" }} />
+          <Skill img={{ src: atlas, "alt": "atlas" }} />
+          <Skill img={{ src: postgresql, "alt": "postgresql" }} />
+          <Skill img={{ src: mysql, "alt": "mysql" }} />
+          <Skill img={{ src: firebase, "alt": "firebase" }} />
         </div>
       </div>
 

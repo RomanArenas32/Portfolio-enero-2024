@@ -41,9 +41,6 @@ code {
     monospace;
 }
 
-.animacion {
-  transform: translateY(100%)
-}
 
 @media (max-width: 639px) {
   .tecnologies>img {

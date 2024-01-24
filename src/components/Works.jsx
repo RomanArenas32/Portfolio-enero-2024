@@ -6,7 +6,7 @@ export const Works = () => {
 
   return (
     <div className='bg-[--color2-l] my-8'>
-      <h2 className=" font-semibold text-3xl text-[--color5-l] text-center p-3  shadow-md">Experience</h2>
+      <h2 className=" text-center text-3xl font-bold mb-10 text-[--color5-l] shadow-2xl py-3">Experience</h2>
       <div className="flex flex-wrap gap-2  text-[--color1-l] my-8 p-6 justify-center">
 
 

@@ -11,7 +11,7 @@ export const About = () => {
       name="About"
       className=" flex flex-col items-center  w-screen "
     >
-      <h2 className="font-semibold text-3xl p-2 ">About</h2>
+      <h2 className="text-center text-3xl font-bold text-[--color5-l] shadow-2xl py-3 w-full ">About</h2>
 
       <div className="flex flex-col items-center justify-center w-screen bg-[--color5-l] p-10 text-justify">
 
