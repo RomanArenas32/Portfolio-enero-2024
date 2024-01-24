@@ -14,7 +14,7 @@ export const Home = () => {
       </ul>
 
 
-      <div className="  w-screen flex flex-col justify-center text-center p-3 gap-5 items-center md:flex-row md:justify-evenly my-20 mb-40 ">
+      <div className="  w-screen flex flex-col justify-center text-center p-3 gap-5 items-center md:flex-row md:justify-evenly my-20 mb-40 md:pr-56">
 
         <img
           alt="developer"

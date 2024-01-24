@@ -29,7 +29,7 @@ export const Technologie = () => {
     >
       <div className=' bg-[--color2-l] p-2 m-8'>
         <h2 className="text-center text-3xl font-bold mb-10 text-[--color5-l] shadow-2xl py-3">Technologies</h2>
-        <div className="w-screen content-center justify-center  flex flex-wrap gap-3 p-10 tecnologies">
+        <div className="w-screen content-center justify-center  flex flex-wrap gap-3 p-5 tecnologies">
           <Skill img={{ src: html5, "alt": "html5" }} />
           <Skill img={{ src: css3, "alt": "css3" }} />
           <Skill img={{ src: javascript, "alt": "javascript" }} />

@@ -54,7 +54,7 @@ export const Contact = () => {
           <input type="text" className="w-full h-12 border border-[--color5-l]  px-3 rounded-lg" placeholder="name" id="name" value={formData.name} onChange={handleInputChange} />
           <input className="w-full h-12 border border-[--color5-l]  px-3 rounded-lg" placeholder="Email" id="email" name="" type="email" value={formData.email} onChange={handleInputChange} />
           <textarea className="w-full h-32 border border-[--color5-l] px-3 rounded-lg" placeholder="Message" id="message" name="" value={formData.message} onChange={handleInputChange}></textarea>
-          <button className="w-full h-12 bg-[--color4-l] hover:bg-[--color5-l] text-[--color1-l] font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline uppercase" onClick={handleSubmit}>send message</button>
+          <button className="w-full h-12 bg-[--color4-l] hover:bg-[--color5-l] text-[--color1-l] font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline uppercase lg:w-2/3" onClick={handleSubmit} >send message</button>
         </form>
         <div className="pt-2 w-full">
           {
