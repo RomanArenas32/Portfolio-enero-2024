@@ -41,7 +41,7 @@ export const Contact = () => {
     try {
       emailjs.sendForm('service_fuseemb', 'template_idi6hl8', form.current, 'OXtnIgHGm_7Pcc9yu')
         .then((result) => {
-          if (result.text == "OK") {
+          if (result.text === "OK") {
             setAlerta({ msg: 'Message sent successfully', error: false });
             setFormData(initialState)
             setTimeout(() => {
