@@ -14,7 +14,6 @@ export const Works = () => {
         {/* REDUSERS */}
         <div className=''>
           <div id="form-container" className="flex flex-col justify-between h-full bg-[--color1-l] p-16 rounded-lg shadow-2xl w-80 relative z-10 transform transition duration-500 ease-in-out">
-            <h2 id="form-title" className="text-center text-3xl font-bold mb-10 text-[--color5-l]">RedUsers</h2>
             <div>
               <img src={imgRedusers} alt="redusers" className='my-2'/>
               <h6 className='text-[--color4-l] font-medium text-center'>2023-actually</h6>
@@ -28,7 +27,7 @@ export const Works = () => {
         {/* teclab */}
         <div >
           <div id="form-container" className="h-full bg-[--color1-l] p-16 rounded-lg shadow-2xl w-80 relative z-10 transform transition duration-500 ease-in-out flex flex-col justify-between">
-            <h2 id="form-title" className="text-center text-3xl font-bold mb-10 text-[--color5-l]">Teclab</h2>
+          
             <div>
               <img src={imgteclab} alt="teclab" className='my-2'/>
               <h6 className='text-[--color4-l] font-medium text-center'>2023-actually</h6>
