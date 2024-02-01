@@ -1,4 +1,4 @@
-import { About, Contact, Technologie, Home, NavBar, Projects, SlideBar, Works } from './components';
+import { About, Contact, Technologie, Home, NavBar, Projects, SlideBar, Works, WhatsApp } from './components';
 
 export const App = () => {
   return (
@@ -11,6 +11,7 @@ export const App = () => {
       <Works />
       <Technologie />
       <Contact />
+      <WhatsApp/>
     </>
   );
 }

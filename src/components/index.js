@@ -7,3 +7,5 @@ export * from './NavBar';
 export * from './Projects';
 export * from './SlideBar';
 export * from './Works';
+export * from './WhatsApp';
+
