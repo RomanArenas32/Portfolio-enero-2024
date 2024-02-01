@@ -79,7 +79,7 @@ export const Contact = () => {
         </div>
       </div>
       <div className="w-full p-2">
-        <a href="http://api.whatsapp.com/send?phone=+542281568550&text=Hola Roman me gustaria contactar contigo"  target="_blank" className="text-right w-28"><img src={whhatsapp} alt="whatsapp" className="w-28 h-28" /></a>
+        <a href="http://api.whatsapp.com/send?phone=+542281568550&text=Hola Roman me gustaria contactar contigo"  target="_blank" rel="noreferrer" className="text-right w-28"><img src={whhatsapp} alt="whatsapp" className="w-28 h-28" /></a>
       </div>
 
     </div>
