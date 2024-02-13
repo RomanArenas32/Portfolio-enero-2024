@@ -7,11 +7,11 @@ export const Proyect = ({ propiedades }) => {
             <img className="object-cover w-full h-full" src={projectsImageSrc} alt="" />
 
             <span className="flex flex-col p-4 absolute backdrop-blur hover:backdrop-blur-[20px] inset-0 items-center justify-between opacity-0 hover:opacity-100 transition-opacity duration-300">
-                <p className={`text-justify ${letterColor} font-semibold`}>{description}</p>
-                <div className="flex p-4 flex-row font-semibold">
-                    {githubLinkF && <a className="ml-4 hover:text-yellow-300 cursor-pointer" href={githubLinkF} target="_blank" rel="noreferrer">Github frontend</a>}
-                    {githubLinkB && <a className="ml-4 hover:text-yellow-300 cursor-pointer" href={githubLinkB} target="_blank" rel="noreferrer">Github backend</a>}
-                    {deployLink && <a className="ml-4 hover:text-yellow-300 cursor-pointer" href={deployLink} target="_blank" rel="noreferrer">Deploy</a>}
+                <p className={`text-justify ${letterColor} font-bold`}>{description}</p>
+                <div className="flex p-1 flex-row font-semibold">
+                    {githubLinkF && <a className="ml-4 hover:text-yellow-400 cursor-pointer" href={githubLinkF} target="_blank" rel="noreferrer">Github frontend</a>}
+                    {githubLinkB && <a className="ml-4 hover:text-yellow-400 cursor-pointer" href={githubLinkB} target="_blank" rel="noreferrer">Github backend</a>}
+                    {deployLink && <a className="ml-4 hover:text-yellow-400 cursor-pointer" href={deployLink} target="_blank" rel="noreferrer">Deploy</a>}
                 </div>
             </span>
         </div>

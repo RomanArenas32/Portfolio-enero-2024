@@ -4,6 +4,8 @@ import openpy from "../assets/projects/openpy.PNG";
 import javascript1 from '../assets/projects/javascript-vol1.PNG';
 import javascript2 from '../assets/projects/javascript-vol2.PNG';
 import nodeRedusers from '../assets/projects/node-redusers.PNG';
+import calculadorPropinas from '../assets/projects/calculadorPropinas.PNG';
+
 
 
 import { Proyect } from "../utils";
@@ -18,6 +20,13 @@ export const Projects = () => {
     >
       <h2 className="text-center text-3xl font-bold mb-10 text-[--color5-l] shadow-2xl py-3">Projects</h2>
       <div className="   gap-4  flex flex-wrap justify-center">
+      <Proyect propiedades={{
+        description:
+          "This is a desktop software project for managing tipping calculations among restaurant staff. It utilizes MongoDB for tip data storage and is built with a backend in Node.js/Express and Typescript. The user interfaces are crafted using Vue.js/Typescript and Tailwind CSS.",
+        projectsImageSrc: calculadorPropinas,
+        githubLinkF: "https://github.com/RomanArenas32/facilitatPagoPropinasRestaurante-frontend",
+        githubLinkB: "https://github.com/RomanArenas32/FacilitarPagoPropinasRestaurante-backend",
+      }} />
         <Proyect propiedades={{
           description:
             "In this project, published as a technology article on the 'redUsers' company website, I demonstrate various ways to consume a third-party API using the native JavaScript fetch API and other external packages such as Axios and Superagent. It consists of four applications.",
