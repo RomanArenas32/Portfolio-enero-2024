@@ -17,6 +17,8 @@ import atlas from '../assets/tecnologies/atlas.webp';
 import postgresql from '../assets/tecnologies/postgresql.png';
 import mysql from '../assets/tecnologies/mysql.jpg';
 import firebase from '../assets/tecnologies/firebase.png';
+import vue from '../assets/tecnologies/vuejs.png';
+
 import { Skill } from '../utils/Skill';
 
 
@@ -34,6 +36,7 @@ export const Technologie = () => {
           <Skill img={{ src: css3, "alt": "css3" }} />
           <Skill img={{ src: javascript, "alt": "javascript" }} />
           <Skill img={{ src: react, "alt": "react js" }} />
+          <Skill img={{ src: vue, "alt": "vue js" }} />
           <Skill img={{ src: reactNative, "alt": "react Native" }} />
           <Skill img={{ src: reactTestingLibrary, "alt": "reactTestingLibrary" }} />
           <Skill img={{ src: jest, "alt": "jest" }} />
