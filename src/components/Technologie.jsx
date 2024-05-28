@@ -18,6 +18,8 @@ import postgresql from '../assets/tecnologies/postgresql.png';
 import mysql from '../assets/tecnologies/mysql.jpg';
 import firebase from '../assets/tecnologies/firebase.png';
 import vue from '../assets/tecnologies/vuejs.png';
+import next from '../assets/tecnologies/Nextjs.png';
+import nest from '../assets/tecnologies/nestjs.png';
 
 import { Skill } from '../utils/Skill';
 
@@ -36,6 +38,7 @@ export const Technologie = () => {
           <Skill img={{ src: css3, "alt": "css3" }} />
           <Skill img={{ src: javascript, "alt": "javascript" }} />
           <Skill img={{ src: react, "alt": "react js" }} />
+          <Skill img={{ src: next, "alt": "next js" }} />
           <Skill img={{ src: vue, "alt": "vue js" }} />
           <Skill img={{ src: reactNative, "alt": "react Native" }} />
           <Skill img={{ src: reactTestingLibrary, "alt": "reactTestingLibrary" }} />
@@ -47,6 +50,7 @@ export const Technologie = () => {
           <Skill img={{ src: express, "alt": "express" }} />
           <Skill img={{ src: mongo, "alt": "mongo" }} />
           <Skill img={{ src: atlas, "alt": "atlas" }} />
+          <Skill img={{ src: nest, "alt": "nest js" }} />
           <Skill img={{ src: postgresql, "alt": "postgresql" }} />
           <Skill img={{ src: mysql, "alt": "mysql" }} />
           <Skill img={{ src: firebase, "alt": "firebase" }} />
